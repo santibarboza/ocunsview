@@ -49,6 +49,10 @@ font-weight: 400;
 #compilar{
     float: right;
 }
+.tablaRegistro{
+    padding-top:5px;
+    padding-bottom:5px;
+}
 .link-footer {
     background: #111;
     padding: 0px 0 60px;
