@@ -26,7 +26,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4">
+            <div class="col-xs-6 col-md-3">
                 <div class="panel panel-default" id="panelCompilado">
                   <div class="panel-heading">
                     <h3 class="panel-title">Codigo Compilado</h3>
@@ -42,9 +42,9 @@
                                   ng-model="code"
                                   readonly>//Aca iria el codigo compilado</textarea>
                         <div id="barraCompilar">
-                            <select class="selectpicker col-md-8" title="Tipo de Ejecucion">
-                                <option>Ejecutar Todo el Código</option>
-                                <option>Ejecutar Paso a Paso</option>
+                            <select class="selectpicker col-md-8" id="tipoEjecucion">
+                                <option>Todo el Código</option>
+                                <option>De a 1 Instrucción</option>
                             </select>
                             <button type="button" class="btn btn-default col-md-4" id="ejecutar">Ejecutar</button>
                         </div>    
