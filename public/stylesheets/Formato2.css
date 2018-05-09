@@ -23,6 +23,10 @@ font-weight: 400;
     box-shadow: none;
     width:60%;
 }
+#panelIde{
+    margin-top: 50px;
+    padding-top: 100px;
+}
 .link-footer {
     background: #111;
     padding: 0px 0 60px;
