@@ -24,8 +24,10 @@ font-weight: 400;
     width:60%;
 }
 #panelIde{
-    margin-top: 50px;
-    padding-top: 100px;
+    margin-top: 60px;
+}
+#compilar{
+    float: right;
 }
 .link-footer {
     background: #111;
