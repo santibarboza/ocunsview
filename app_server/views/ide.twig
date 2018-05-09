@@ -58,6 +58,21 @@
                         <h3 class="panel-title">Registros del Procesador</h3>
                     </div>
                     <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead><tr>
+                                {% for i in range(0, 9) %}
+                                    <th>R{{i}}</th>
+                                {% endfor %}
+                                {% for i in 'A'..'E' %}
+                                    <th>R{{i}}</th>
+                                {% endfor %}
+                            </tr></thead> 
+                            <tbody> <tr>  
+                                {% for i in range(0, 15) %}
+                                    <th>00</th>
+                                {% endfor %} 
+                            </tr></tbody>
+                        </table>
                     </div>
                 </div>
             </div>
