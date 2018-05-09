@@ -5,8 +5,14 @@ body {
         Times, serif;
   color: white;
   background-color: #FFF;
-}
 
+}
+html{
+font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+line-height: 1.5;
+font-size: 15px;
+font-weight: 400;
+}
 #panelTOTAL{
    background-color: #f5e79e;
    padding-right:1em;
@@ -19,6 +25,29 @@ body {
     background: #111;
     padding: 40px 0 60px;
     position: relative;
+}
+.link-footer .copyright {
+
+    position: absolute;
+    right: 20px;
+    top: 0;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #959595;
+
+}
+.link-footer nav {
+
+    margin: 0 0 8px 0;
+
+}
+.width-wrapper {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+
 }
 
 /** =====================
