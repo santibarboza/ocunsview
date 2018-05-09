@@ -1,0 +1,28 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+        {% include "components/navegationBar.twig" %}
+        <div class="container-fluid id=panelIde">
+            <div class=".col-xs-6 .col-md-4">
+                <div class="panel panel-default" id="panelCode">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Codigo</h3>
+                  </div>
+                  <div class="panel-body">
+                    <form role="form">
+                        <textarea id="sourceCode"
+                                  class="form-control source-code"
+                                  style="margin-bottom:5px;"
+                                  rows="35"
+                                  tab-support
+                                  select-line
+                                  ng-model="code"></textarea>
+                        <button type="button" class="btn btn-default">Compilar</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+        {% include "components/footer.twig" %}
+
+{% endblock %}

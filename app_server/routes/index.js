@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const ctrlMain = require('../controllers/main');
+const ctrlIde = require('../controllers/ide');
 //const ctrlGrupos = require('../controllers/gruposController');
 //const ctrlRamas = require('../controllers/ramasController');
 //const ctrlComentarios = require('../controllers/comentariosController');
@@ -8,6 +9,7 @@ const ctrlMain = require('../controllers/main');
 
 /* GET home page. */
 router.get('/', ctrlMain.index);
+router.get('/ide', ctrlIde.getIde);
 //router.get('/api/grupos', ctrlGrupos.getGrupos);
 //router.get('/api/ramas', ctrlRamas.getRamas);
 
