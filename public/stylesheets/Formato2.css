@@ -31,6 +31,13 @@ font-weight: 400;
     margin-left: auto;
     margin-right: auto;
 }
+#panelCompilado{
+    height:100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #compilar{
     float: right;
 }
