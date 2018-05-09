@@ -75,6 +75,9 @@ font-weight: 400;
 #logo{
     float:right;
 }
+#ejecutar{
+    float:right;
+}
 #dirInicio{
     resize: none;
     padding-left: 13px;
