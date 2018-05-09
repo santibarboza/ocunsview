@@ -1,9 +1,12 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-       {% include "components/navegationBar.twig" %}
-       <div class="container-fluid id=panelTOTAL">
-	   <button type="button" class="btn btn-default btn-lg btn-block">Crear Nuevo Archivo</button>
-           <button type="button" class="btn btn-default btn-lg btn-block">Subir Archivo Desde Ordenador</button>
-       </div>
+        {% include "components/navegationBar.twig" %}
+        <div class="container-fluid id=panelTOTAL">
+	        <button type="button" class="btn btn-default btn-lg btn-block">Crear Nuevo Archivo</button>
+            <button type="button" class="btn btn-default btn-lg btn-block">Subir Archivo Desde Ordenador</button>
+            <button type="button" class="btn btn-default btn-lg btn-block">Importar Archivo Desde Google Drive</button>
+            <button type="button" class="btn btn-default btn-lg btn-block">Importar Archivo Desde DropBox</button>
+            <button type="button" class="btn btn-default btn-lg btn-block">Importar Archivo Desde OneDrive</button>
+        </div>
 {% endblock %}
