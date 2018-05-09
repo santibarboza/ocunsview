@@ -1,5 +1,5 @@
 /* GET ide page */
-const ide = function(req, res) {
+const getIde = function(req, res) {
 	res.render('ide', {
 		title: 'OCUNS-Entorno Web'
 	});
@@ -7,5 +7,5 @@ const ide = function(req, res) {
 
 
 module.exports = {
-  ide
+  getIde
 }; 
