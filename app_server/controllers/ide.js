@@ -7,5 +7,5 @@ const ide = function(req, res) {
 
 
 module.exports = {
-  index
+  ide
 }; 
