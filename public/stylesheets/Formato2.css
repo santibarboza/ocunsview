@@ -18,8 +18,10 @@ font-weight: 400;
    padding-right:1em;
     margin-top: 50px;
     padding-top: 100px;
+    padding-bottom:150px;
     border-width: 0px;
     box-shadow: none;
+    width:60%;
 }
 .link-footer {
     background: #111;
