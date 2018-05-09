@@ -76,12 +76,15 @@ font-weight: 400;
     float:right;
 }
 #dirInicio{
-    margin-left: 15px;
     resize: none;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-top: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    height: 30px;
+    width: 40px;
+    border-width: 0px;
     background-color: #ddd6;
 }
 #labeldirinicio{
