@@ -61,7 +61,7 @@
                         <table class="table table-bordered">
                             <thead><tr>
                                 {% for i in range(0, 9) %}
-                                    <th class="h5" id="registro{{i}}">R{{i}}</th>
+                                    <th">R{{i}}</th>
                                 {% endfor %}
                                 {% for i in 'A'..'E' %}
                                     <th>R{{i}}</th>
@@ -69,7 +69,7 @@
                             </tr></thead> 
                             <tbody> <tr>  
                                 {% for i in range(0, 15) %}
-                                    <th>00</th>
+                                    <th class="h5" id="registro{{i}}>00</th>
                                 {% endfor %} 
                             </tr></tbody>
                         </table>
