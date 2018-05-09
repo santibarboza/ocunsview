@@ -37,6 +37,15 @@ font-weight: 400;
     margin-left: auto;
     margin-right: auto;
 }
+#panelRegistros{
+    margin-top: 50px;
+}
+#siguientePaso{
+    width:90%;
+}
+#detener{
+    width:90%;
+}
 #tipoEjecucion{
     padding-right: 5px;
     padding-left: 0px;
