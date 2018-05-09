@@ -52,13 +52,17 @@
                   </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-md-4">
+            <div class="col-xs-6 col-md-5">
+                <div id="botoneraEjecucion">
+                    <button type="button" class="btn btn-default col-md-6" id="siguientePaso">Siguiente Paso</button>
+                    <button type="button" class="btn btn-default col-md-6" id="detener">Detener Ejecución</button>
+                </div>
                 <div class="panel panel-default" id="panelRegistros">
                     <div class="panel-heading">
                         <h3 class="panel-title">Registros del Procesador</h3>
                     </div>
                     <div class="panel-body">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered"id="row1">
                             <thead><tr>
                                 {% for i in range(0, 7) %}
                                     <th style="padding-top:3px;padding-bottom:3px;text-align:center;">R{{i}}</th>
