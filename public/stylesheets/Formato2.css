@@ -126,4 +126,7 @@ font-weight: 400;
     padding-top:5px;
     padding-bottom:5px;
 }
+.table.table-bordered {
 
+    margin-bottom: 5px;
+}

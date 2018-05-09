@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-xs-6 col-md-4">
-                <div class="panel panel-default" id="panelCompilado">
+                <div class="panel panel-default" id="panelRegistros">
                     <div class="panel-heading">
                         <h3 class="panel-title">Registros del Procesador</h3>
                     </div>
@@ -61,26 +61,26 @@
                         <table class="table table-bordered">
                             <thead><tr>
                                 {% for i in range(0, 7) %}
-                                    <th style="padding-top:3px;padding-bottom:3px;">R{{i}}</th>
+                                    <th style="padding-top:3px;padding-bottom:3px;text-align:center;">R{{i}}</th>
                                 {% endfor %}
                             </tr></thead> 
                             <tbody> <tr>  
                                 {% for i in range(0, 7) %}
-                                    <th style="padding-top:3px;padding-bottom:3px;" class="h5 tablaRegistro" id="registro{{i}}">00</th>
+                                    <th style="padding-top:3px;padding-bottom:3px;text-align:center;" class="h5 tablaRegistro" id="registro{{i}}">00</th>
                                 {% endfor %} 
                             </tr></tbody>
                         </table>
                         <table class="table table-bordered" id="row2">
                             <thead><tr>
-                                <th style="padding-top:3px;padding-bottom:3px;" >R8</th>
-                                <th style="padding-top:3px;padding-bottom:3px;" >R9</th>
+                                <th style="padding-top:3px;padding-bottom:3px;text-align:center;" >R8</th>
+                                <th style="padding-top:3px;padding-bottom:3px;text-align:center;" >R9</th>
                                 {% for i in 'A'..'F' %}
-                                    <th class="tablaRegistro"style="padding-top:3px;padding-bottom:3px;">R{{i}}</th>
+                                    <th class="tablaRegistro"style="padding-top:3px;padding-bottom:3px;text-align:center;">R{{i}}</th>
                                 {% endfor %}
                             </tr></thead> 
                             <tbody> <tr>  
                                 {% for i in range(8, 15) %}
-                                    <th class="h5 tablaRegistro" id="registro{{i}}"style="padding-top:3px;padding-bottom:3px;">00</th>
+                                    <th class="h5 tablaRegistro" id="registro{{i}}"style="padding-top:3px;padding-bottom:3px;text-align:center;">00</th>
                                 {% endfor %} 
                             </tr></tbody>
                         </table>
