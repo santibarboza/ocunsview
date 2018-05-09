@@ -2,12 +2,8 @@
 
 {% block body %}
        {% include "components/navegationBar.twig" %}
-       <div class="panel panel-info" id="panelTOTAL">
-           <div class="row">
-               <div class="col-md-4" id="panelIzquierdo">
-               </div>
-               <div class="col-md-8" id="panelDerecho">
-               </div>
-           </div>
+       <div class="container-fluid id=panelTOTAL">
+	   <button type="button" class="btn btn-default btn-lg btn-block">Crear Nuevo Archivo</button>
+           <button type="button" class="btn btn-default btn-lg btn-block">Subir Archivo Desde Ordenador</button>
        </div>
 {% endblock %}
