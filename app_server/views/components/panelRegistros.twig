@@ -18,9 +18,7 @@
             </table>
             <table class="table table-bordered" id="row2">
                 <thead><tr>
-                    <th style="padding-top:3px;padding-bottom:3px;text-align:center;" >R8</th>
-                    <th style="padding-top:3px;padding-bottom:3px;text-align:center;" >R9</th>
-                    {% for i in 'A'..'F' %}
+                    {% for i in [8,4]|merge('A'..'F') %}
                         <th class="tablaRegistro"style="padding-top:3px;padding-bottom:3px;text-align:center;">R{{i}}</th>
                     {% endfor %}
                 </tr></thead> 
