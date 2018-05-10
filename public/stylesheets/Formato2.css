@@ -140,9 +140,6 @@ font-weight: 400;
 #row2{
     margin-bottom:0px;
 }
-#botoneraEjecucion{
-    width:100%;
-}
 .th{
     padding-top:5px;
     padding-bottom:5px;
@@ -158,5 +155,8 @@ font-weight: 400;
     background-color: #ddd;
 }
 #botoneraEjecucion{
+    margin-bottom: 10px;
+}
+#botoneraEjecucion1{
     margin-bottom: 10px;
 }
