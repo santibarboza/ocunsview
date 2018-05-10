@@ -3,17 +3,17 @@
 {% block body %}
         {% include "components/navegationBar.twig" %}
         <div class="container-fluid" id="panelIde">
-            <div class="col-xs-6 col-md-7" id="Principal">
+            <!div class="col-xs-6 col-md-7" id="Principal">
                 {% include "components/menu.twig" %} 
                 
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12 col-md-4">
                 	{% include "components/panelCode.twig" %}    
                 </div>
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-12 col-md-3">
                     {% include "components/panelCompilado.twig" %} 
                 </div>
-            </div>            
-            <div class="col-xs-6 col-md-5">
+            <!/div>            
+            <div class="col-xs-12 col-md-5">
 			        {% include "components/divEjecucion.twig" %} 
             </div>
         </div>
