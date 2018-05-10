@@ -38,7 +38,7 @@ font-weight: 400;
     margin-right: auto;
 }
 #panelRegistros{
-    margin-top: 50px;
+    
 }
 #siguientePaso{
     width:100%;
@@ -150,4 +150,10 @@ font-weight: 400;
 .table.table-bordered {
 
     margin-bottom: 5px;
+}
+.tablaMemoria:hover {
+    background-color: #ddd;
+}
+.tablaRegistro:hover {
+    background-color: #ddd;
 }
