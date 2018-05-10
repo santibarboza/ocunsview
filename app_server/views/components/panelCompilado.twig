@@ -1,0 +1,24 @@
+	<div class="panel panel-default" id="panelCompilado">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Codigo Compilado</h3>
+	  </div>
+	  <div class="panel-body">
+	    <form role="form">
+		<textarea id="codigoCompilado"
+		          class="form-control source-code"
+		          style="margin-bottom:5px;"
+		          rows="20"
+		          tab-support
+		          select-line
+		          ng-model="code"
+		          readonly>//Aca iria el codigo compilado</textarea>
+		<div id="barraCompilar">
+		    <select class="selectpicker col-md-8" id="tipoEjecucion">
+		        <option>Todo el Código</option>
+		        <option>De a 1 Instrucción</option>
+		    </select>
+		    <button type="button" class="btn btn-default col-md-4" id="ejecutar">Ejecutar</button>
+		</div>    
+	    </form>
+	  </div>
+	</div>
