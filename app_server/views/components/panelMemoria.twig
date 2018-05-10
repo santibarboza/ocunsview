@@ -4,13 +4,15 @@
         </div>
         <div class="panel-body">
             <table class="table table-bordered" id="tablaMemoria">
-                <tbody> <tr>  
-                    {% for i in 0..9|merge('A'..'F') %}
-                        {% for j in 0..9|merge('A'..'F') %}
+                <tbody>
+                    {% for i in range(0,9)|merge('A'..'F') %}
+                        <tr>  
+                        {% for j in range(0,9)|merge('A'..'F') %}
                             {% include "components/contenidoMemoria.twig" %}
                         {% endfor %}
+                        </tr>
                     {% endfor %} 
-                </tr></tbody>
+                </tbody>
             </table>
         </div>
     </div>
