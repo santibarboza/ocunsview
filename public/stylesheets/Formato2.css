@@ -157,3 +157,6 @@ font-weight: 400;
 .tablaRegistro:hover {
     background-color: #ddd;
 }
+#botoneraEjecucion{
+    margin-bottom: 10px;
+}
