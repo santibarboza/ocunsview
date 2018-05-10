@@ -3,10 +3,20 @@
             <h3 class="panel-title">Registros del Procesador</h3>
         </div>
         <div class="panel-body">
-            {% block body %}
-	            {% set idTable, lista = "row1", range(0, 7) %}
-                {% include "components/renderTable.twig" %}
-            {% endblock %}
+	        {% set idTable, lista = "row1", range(0, 7) %}    
+                <table class="table table-bordered"id={{idTable}}>
+                    <thead><tr>
+                        {% for i in lista %}
+                            {% include "components/tituloRegistro.twig" %}
+                        {% endfor %}
+                    </tr></thead> 
+                    <tbody> <tr>  
+                        {% for i in lista %}
+                            {% include "components/contenidoRegistro.twig" %}
+                        {% endfor %} 
+                    </tr></tbody>
+                </table>
+            {% endset %}
             {% block body %}
 	            {% set idTable, lista = "row2", [8,9]|merge('A'..'F') %}
                 {% include "components/renderTable.twig" %}
