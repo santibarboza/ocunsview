@@ -40,12 +40,6 @@ font-weight: 400;
 #panelRegistros{
     
 }
-#siguientePaso{
-    width:100%;
-}
-#detener{
-    width:100%;
-}
 #tipoEjecucion{
     padding-right: 5px;
     padding-left: 0px;
@@ -159,4 +153,5 @@ font-weight: 400;
 }
 #botoneraEjecucion1{
     margin-bottom: 10px;
+    float: right;
 }
