@@ -3,5 +3,14 @@
             <h3 class="panel-title">Memoria del Sistema</h3>
         </div>
         <div class="panel-body">
+            <table class="table table-bordered" id="row2">
+                <tbody> <tr>  
+                    {% for i in 0..9|merge('A'..'F') %}
+                        {% for j in 0..9|merge('A'..'F') %}
+                            {% include "components/contenidoMemoria.twig" %}
+                        {% endfor %}
+                    {% endfor %} 
+                </tr></tbody>
+            </table>
         </div>
     </div>
