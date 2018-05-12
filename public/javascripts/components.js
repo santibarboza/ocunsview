@@ -68,7 +68,7 @@ var contenedorCompilado = new Vue({
                     contenedorCode.bigSize='col-md-4';
                 else if(contenedorCode.ver)
                             contenedorCode.bigSize='col-md-9';
-                     else if(contenedorSimulacion.ver){
+                     else if(contenedorCompilador.ver){
                             this.bigSize='col-md-4';
                             contenedorSimulacion.bigSize='col-md-8';
                         }else {
