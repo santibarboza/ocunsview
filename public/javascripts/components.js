@@ -23,6 +23,22 @@ var contenedorCompilado = new Vue({
                     else
                         contenedorSimulacion.bigSize='col-md-12';
            }
+       },
+    mostrarCompilado:
+          function mostrarCompilado(){
+            if(!this.ver){
+                this.ver=true;
+                this.bigSize='col-md-3';
+                if(contenedorCode.ver && contenedorSimulacion.ver)
+                    contenedorCode.bigSize='col-md-4';
+                else if(contenedorSimulacion.ver)
+                        contenedorSimulacion.bigSize='col-md-9';
+                    else if(contenedorSimulacion.ver)
+                            contenedorCode.bigSize='col-md-9';
+                        else{
+                            this.bigSize='col-md-12';
+                        }
+           }
        }
   }
 })
