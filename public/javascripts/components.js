@@ -6,7 +6,7 @@ var contenedorCode = new Vue({
   }
 })
 var contenedorCompilado = new Vue({
-  el: '#contenedorCode',
+  el: '#contenedorCompilado',
   data: {
     ver: true,
     bigSize:'col-md-3'
