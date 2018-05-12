@@ -10,6 +10,20 @@ var contenedorCompilado = new Vue({
   data: {
     ver: true,
     bigSize:'col-md-3'
+  },
+  methods: {
+    ocultarCompilado:
+          function ocultarCompilado(){
+            if(this.ver){
+                this.ver=false;
+                if(contenedorCode.ver && contenedorSimulacion.ver)
+                    contenedorCode.bigSize='col-md-7';
+                else if(!contenedorSimulacion.ver)
+                        contenedorCode.bigSize='col-md-12';
+                    else
+                        contenedorSimulacion.bigSize='col-md-12';
+           }
+       }
   }
 })
 var contenedorSimulacion = new Vue({
@@ -31,14 +45,4 @@ var panelMemoria = new Vue({
     ver: true
   }
 })
-function ocultarCompilado(){
-    if(contenedorCompilado.ver){
-        contenedorCompilado.ver=false;
-        if(contenedorCode.ver && contenedorSimulacion.ver)
-            contenedorCode.bigSize='col-md-7';
-        else if(!contenedorSimulacion.ver)
-                contenedorCode.bigSize='col-md-12';
-            else
-                contenedorSimulacion.bigSize='col-md-12';
-    }
-}
+
