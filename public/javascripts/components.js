@@ -2,24 +2,21 @@ var contenedorCode = new Vue({
   el: '#contenedorCode',
   data: {
     ver: true,
-    size:4,
-    bigSize:'col-md-'+size
+    bigSize:'col-md-4'
   }
 })
 var contenedorCompilado = new Vue({
   el: '#contenedorCompilado',
   data: {
     ver: true,
-    size:3,
-    bigSize:'col-md-'+size
+    bigSize:'col-md-3'
   }
 })
 var contenedorSimulacion = new Vue({
   el: '#contenedorSimulacion',
   data: {
     ver: true,
-    size:5,
-    bigSize:'col-md-'+size
+    bigSize:'col-md-5'
   }
 })
 var panelRegistros = new Vue({
@@ -35,9 +32,9 @@ var panelMemoria = new Vue({
   }
 })
 function ocultarCompilado(){
-    contenedorCompilado.ver=false;
-    if(contenedorCode.ver)
-        contenedorCode.size=contenedorCode.size+contenedorCompilado.size;
-    else
-        contenedorSimulacion.size=contenedorSimulacion.size+contenedorCompilado.size;
+   // contenedorCompilado.ver=false;
+ //   if(contenedorCode.ver)
+  //      contenedorCode.size=contenedorCode.size+contenedorCompilado.size;
+    //else
+      //  contenedorSimulacion.size=contenedorSimulacion.size+contenedorCompilado.size;
 }
