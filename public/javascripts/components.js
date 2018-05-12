@@ -2,24 +2,24 @@ var contenedorCode = new Vue({
   el: '#contenedorCode',
   data: {
     ver: true,
-    bigSize:'col-md-'+size,
-    size:4'
+    size:4,
+    bigSize:'col-md-'+size
   }
 })
 var contenedorCompilado = new Vue({
   el: '#contenedorCompilado',
   data: {
     ver: true,
-    bigSize:'col-md-'+size,
-    size:3'
+    size:3,
+    bigSize:'col-md-'+size
   }
 })
 var contenedorSimulacion = new Vue({
   el: '#contenedorSimulacion',
   data: {
     ver: true,
-    bigSize:'col-md-'+size,
-    size:5
+    size:5,
+    bigSize:'col-md-'+size
   }
 })
 var panelRegistros = new Vue({
