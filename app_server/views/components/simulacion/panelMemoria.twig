@@ -1,4 +1,4 @@
-    <div class="panel panel-default" id="panelMemoria">
+    <div class="panel panel-default" id="panelMemoria" v-if="ver">
         <div class="panel-heading">
             <h3 class="panel-title">Memoria del Sistema</h3>
         </div>
@@ -8,7 +8,7 @@
                     {% for i in range(0,9)|merge('A'..'F') %}
                         <tr>  
                         {% for j in range(0,9)|merge('A'..'F') %}
-                            {% include "components/contenidoMemoria.twig" %}
+                            {% include "components/simulacion/contenidoMemoria.twig" %}
                         {% endfor %}
                         </tr>
                     {% endfor %} 

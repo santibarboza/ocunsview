@@ -1,4 +1,4 @@
-<div class="panel panel-default" id="panelRegistros">
+<div class="panel panel-default" id="panelRegistros" v-if="ver">
         <div class="panel-heading">
             <h3 class="panel-title">Registros del Procesador</h3>
         </div>
@@ -6,24 +6,24 @@
             <table class="table table-bordered"id="row1">
                 <thead><tr>
                     {% for i in range(0, 7) %}
-                        {% include "components/tituloRegistro.twig" %}
+                        {% include "components/simulacion/tituloRegistro.twig" %}
                     {% endfor %}
                 </tr></thead> 
                 <tbody> <tr>  
                     {% for i in range(0, 7) %}
-                        {% include "components/contenidoRegistro.twig" %}
+                        {% include "components/simulacion/contenidoRegistro.twig" %}
                     {% endfor %} 
                 </tr></tbody>
             </table>
             <table class="table table-bordered" id="row2">
                 <thead><tr>
                     {% for i in [8,9]|merge('A'..'F') %}
-                        {% include "components/tituloRegistro.twig" %}
+                        {% include "components/simulacion/tituloRegistro.twig" %}
                     {% endfor %}
                 </tr></thead> 
                 <tbody> <tr>  
                     {% for i in [8,9]|merge('A'..'F') %}
-                        {% include "components/contenidoRegistro.twig" %}
+                        {% include "components/simulacion/contenidoRegistro.twig" %}
                     {% endfor %} 
                 </tr></tbody>
             </table>

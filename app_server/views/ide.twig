@@ -3,18 +3,15 @@
 {% block body %}
         {% include "components/navegationBar.twig" %}
         <div class="container-fluid" id="panelIde">
-            <!div class="col-xs-6 col-md-7" id="Principal">
-                {% include "components/menu.twig" %} 
-                
-                <div class="col-xs-12 col-md-4">
-                	{% include "components/panelCode.twig" %}    
-                </div>
-                <div class="col-xs-12 col-md-3">
-                    {% include "components/panelCompilado.twig" %} 
-                </div>
-            <!/div>            
-            <div class="col-xs-12 col-md-5">
-			        {% include "components/divEjecucion.twig" %} 
+		    {% include "components/menu/menu.twig" %} 		
+		    <div id="contenedorCode" v-if="ver" class="col-xs-12" v-bind:class="[bigSize]">
+			    {% include "components/panelCode.twig" %}    
+		    </div>
+		    <div id="contenedorCompilado" v-if="ver" class="col-xs-12" v-bind:class="[bigSize]">
+		        {% include "components/panelCompilado.twig" %} 
+		    </div>
+            <div id="contenedorSimulacion" v-if="ver" class="col-xs-12" v-bind:class="[bigSize]">
+        		{% include "components/panelSimulacion.twig" %} 
             </div>
         </div>
         {% include "components/footer.twig" %}
