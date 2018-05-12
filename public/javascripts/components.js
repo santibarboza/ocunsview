@@ -32,9 +32,13 @@ var panelMemoria = new Vue({
   }
 })
 function ocultarCompilado(){
-   // contenedorCompilado.ver=false;
- //   if(contenedorCode.ver)
-  //      contenedorCode.size=contenedorCode.size+contenedorCompilado.size;
-    //else
-      //  contenedorSimulacion.size=contenedorSimulacion.size+contenedorCompilado.size;
+    if(contenedorCompilado.ver){
+        contenedorCompilado.ver=false;
+        if(contenedorCode.ver && contenedorSimulacion.ver)
+            contenedorCode.bigSize='col-md-7';
+        else if(!contenedorSimulacion.ver)
+                contenedorCode.bigSize='col-md-12';
+            else
+                contenedorSimulacion.bigSize='col-md-12';
+    }
 }
