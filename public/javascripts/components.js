@@ -17,12 +17,6 @@ $('#ventanas').multipleSelect({
     onUncheckAll: function() {
                 for(componente in ventanasArray)
                     componente.ocultar();
-            },
-    onOptgroupClick: function(view) {
-                if(view.checked)
-                   gruposArray[view.label].mostrar();
-                else
-                   gruposArray[view.label].ocultar();
             }
 });
 $('#ventanas').multipleSelect('checkAll');
@@ -83,5 +77,4 @@ contenedorSimulacion = new Vue({
     mostrar:mostrarSimulacion        
   }
 })
-var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion,"3":panelRegistros,"4":panelMemoria};
-var gruposArray={"Ejecucion":contenedorSimulacion}
+var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
