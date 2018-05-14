@@ -11,6 +11,8 @@ $('#ventanas').multipleSelect({
   //                  ventanas[view.value].ocultar();
                 alert("Selected text: " +view.value+
                     (view.checked ? 'checked' : 'unchecked'));
+                alert("Selected text: " +view.label+
+                    (view.checked ? 'checked' : 'unchecked'));
                 alert("Selected text: " +ventanas[view.value]+
                     (view.checked ? 'checked' : 'unchecked'));
             }
