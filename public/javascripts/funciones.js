@@ -21,7 +21,7 @@ function mostrarCode(){
                     this.bigSize='col-md-9';
                     contenedorCompilado.bigSize='col-md-3';
              }else if(contenedorSimulacion.ver){
-                    this.bigSize='col-md-9';
+                    this.bigSize='col-md-7';
                     contenedorSimulacion.bigSize='col-md-5';
                 }else 
                     this.bigSize='col-md-12';            
