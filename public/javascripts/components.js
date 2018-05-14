@@ -1,4 +1,4 @@
-var contenedorCode,contenedorCompilado,contenedorSimulacion;
+var panelMemoria, contenedorCode,contenedorCompilado,contenedorSimulacion;
 $('#ventanas').multipleSelect({
     placeholder:"Ventanas Habilitadas",
     minimumCountSelected:2,
@@ -25,6 +25,7 @@ $('#ventanas').multipleSelect({
                    gruposArray[view.label].ocultar();
             }
 });
+$('#ventanas').multipleSelect('checkAll');
 
 var panelRegistros = new Vue({
   el: '#panelRegistros',
@@ -36,7 +37,7 @@ var panelRegistros = new Vue({
     mostrar:mostrarPanelSimulacion        
   }
 })
-var panelMemoria = new Vue({
+panelMemoria = new Vue({
   el: '#panelMemoria',
   data: {
     ver: true
