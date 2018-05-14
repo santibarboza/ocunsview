@@ -9,8 +9,43 @@ $('#ventanas').multipleSelect({
                     ventanasArray[view.value].mostrar();
                 else
                    ventanasArray[view.value].ocultar();
+            },
+    onCheckAll: function() {
+                for(componente in ventanasArray)
+                    componente.mostrar();
+            },
+    onUncheckAll: function() {
+                for(componente in ventanasArray)
+                    componente.ocultar();
+            },
+    onOptgroupClick: function(view) {
+                if(view.checked)
+                   gruposArray[view.label].mostrar();
+                else
+                   gruposArray[view.label].ocultar();
             }
 });
+
+var panelRegistros = new Vue({
+  el: '#panelRegistros',
+  data: {
+    ver: true
+  },
+  methods: {
+    ocultar:ocultarPanelSimulacion,
+    mostrar:mostrarPanelSimulacion        
+  }
+})
+var panelMemoria = new Vue({
+  el: '#panelMemoria',
+  data: {
+    ver: true
+  },
+  methods: {
+    ocultar:ocultarPanelSimulacion,
+    mostrar:mostrarPanelSimulacion        
+  }
+})
 
 contenedorCode = new Vue({
   el: '#contenedorCode',
@@ -38,24 +73,14 @@ contenedorSimulacion = new Vue({
   el: '#contenedorSimulacion',
   data: {
     ver: true,
-    bigSize:'col-md-5'
+    bigSize:'col-md-5',
+    paneles:2,   
+    panelesArray:[panelRegistros,panelMemoria]
   },
   methods: {
     ocultar:ocultarSimulacion,
     mostrar:mostrarSimulacion        
   }
 })
-var panelRegistros = new Vue({
-  el: '#panelRegistros',
-  data: {
-    ver: true
-  }
-})
-var panelMemoria = new Vue({
-  el: '#panelMemoria',
-  data: {
-    ver: true
-  }
-})
-
-var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
+var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion,"3":panelRegistros,"4":panelMemoria};
+var gruposArray={"Ejecucion":contenedorSimulacion}

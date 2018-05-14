@@ -56,7 +56,22 @@ function mostrarCompilado(){
 }
 function ocultarSimulacion(){
     if(this.ver){
-        this.ver=false;
+        this.paneles=0;
+        for(panel in panelesArray)
+            panel.ver=false;
+        ocultarSimulacionTamaño();
+    }
+}
+function mostrarSimulacion(){
+    if(!this.ver){
+        this.paneles=this.panelesArray.length;
+        for(panel in panelesArray)
+            panel.ver=true;
+        mostrarSimulacionTamaño();
+    }
+}
+function ocultarSimulacionTamaño(){
+        contenedorSimulacion.ver=false;
         if(contenedorCode.ver && contenedorCompilado.ver){
             contenedorCode.bigSize='col-md-8';
             contenedorCompilado.bigSize='col-md-4';
@@ -64,21 +79,34 @@ function ocultarSimulacion(){
                 contenedorCode.bigSize='col-md-12';
             else
                 contenedorCompilado.bigSize='col-md-12';
-   }
 }
-function mostrarSimulacion(){
-  if(!this.ver){
-        this.ver=true;
-        this.bigSize='col-md-5';
+function mostrarSimulacionTamaño(){
+        contenedorSimulacion.ver=true;
+        contenedorSimulacion.bigSize='col-md-5';
         if(contenedorCode.ver && contenedorCompilado.ver){
             contenedorCode.bigSize='col-md-4';
             contenedorCompilado.bigSize='col-md-3';
         }else if(contenedorCode.ver)
                 contenedorCode.bigSize='col-md-7';
              else if(contenedorCompilado.ver){
-                    this.bigSize='col-md-8';
+                    contenedorSimulacion.bigSize='col-md-8';
                     contenedorSimulacion.bigSize='col-md-4';
                 }else
-                    this.bigSize='col-md-12';
-   }
+                    contenedorSimulacion.bigSize='col-md-12';
+}
+function mostrarPanelSimulacion(){
+    if(!this.ver){
+        this.ver=true;
+        if(contenedorSimulacion.paneles==0)
+            mostrarSimulacionTamaño();
+        contenedorSimulacion.paneles+=1;    
+    }
+}
+function ocultarPanelSimulacion(){
+    if(this.ver){
+        this.ver=false;
+        if(contenedorSimulacion.paneles==1)
+            ocultarSimulacionTamaño();
+        contenedorSimulacion.paneles-=1;    
+    }
 }
