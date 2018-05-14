@@ -108,6 +108,9 @@ font-weight: 400;
 #labeldirinicio{
     padding-right: 0px;
 }
+#ventanas{
+    float: right;
+}
 
 /** =====================
  * Responsive
