@@ -57,7 +57,7 @@ function mostrarCompilado(){
 function ocultarSimulacion(){
     if(this.ver){
         this.paneles=0;
-        for(panel in panelesArray)
+        for(panel in this.panelesArray)
             panel.ver=false;
         ocultarSimulacionTamaño();
     }
@@ -65,7 +65,7 @@ function ocultarSimulacion(){
 function mostrarSimulacion(){
     if(!this.ver){
         this.paneles=this.panelesArray.length;
-        for(panel in panelesArray)
+        for(panel in this.panelesArray)
             panel.ver=true;
         mostrarSimulacionTamaño();
     }
