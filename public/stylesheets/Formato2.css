@@ -155,3 +155,9 @@ font-weight: 400;
     margin-bottom: 10px;
     float: right;
 }
+.ms-choice > span.placeholder {
+    color: #999;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}

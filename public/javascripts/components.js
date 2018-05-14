@@ -1,5 +1,7 @@
 $('#ventanas').multipleSelect({
     placeholder:"Ventanas Habilitadas",
+    minimumCountSelected:2,
+    countSelected:"# Ventanas Habilitadas",
     onClick: function(view) {
                 alert("Selected text: " +view.value+
 //                $eventResult.text(view.label + '(' + view.value + ') ' + 
