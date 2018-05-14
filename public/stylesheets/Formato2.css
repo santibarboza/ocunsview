@@ -164,4 +164,9 @@ font-weight: 400;
     padding-right: 20px;
     text-align: center;
 }
-
+.ms-choice > span{
+    text-align: center;
+    color: #999;
+    padding-left: 20px;
+    padding-right: 20px;
+}

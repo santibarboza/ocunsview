@@ -8,14 +8,6 @@ $('#ventanas').multipleSelect({
                     ventanasArray[view.value].mostrar();
                 else
                    ventanasArray[view.value].ocultar();
-
-      //          alert("Selected text: " +view.value+
-    //                (view.checked ? 'checked' : 'unchecked'));
-  //              alert("Selected text: " +view.label+
- //                   (view.checked ? 'checked' : 'unchecked'));
-//                alert("Selected text: " +ventanasArray[view.value]+
-//                    (view.checked ? 'checked' : 'unchecked'));
-
             }
 });
 
