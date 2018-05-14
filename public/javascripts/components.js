@@ -4,16 +4,18 @@ $('#ventanas').multipleSelect({
     minimumCountSelected:2,
     countSelected:"# Ventanas Habilitadas",
     onClick: function(view) {
- //               if(view.checked)
- //                   ventanas[view.value].mostrar();
- //               else
-  //                  ventanas[view.value].ocultar();
-                alert("Selected text: " +view.value+
-                    (view.checked ? 'checked' : 'unchecked'));
-                alert("Selected text: " +view.label+
-                    (view.checked ? 'checked' : 'unchecked'));
-                alert("Selected text: " +ventanasArray[view.value]+
-                    (view.checked ? 'checked' : 'unchecked'));
+                if(view.checked)
+                    ventanasArray[view.value].mostrar();
+                else
+                   ventanasArray[view.value].ocultar();
+
+      //          alert("Selected text: " +view.value+
+    //                (view.checked ? 'checked' : 'unchecked'));
+  //              alert("Selected text: " +view.label+
+ //                   (view.checked ? 'checked' : 'unchecked'));
+//                alert("Selected text: " +ventanasArray[view.value]+
+//                    (view.checked ? 'checked' : 'unchecked'));
+
             }
 });
 
