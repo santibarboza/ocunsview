@@ -6,6 +6,7 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
+    float: right;
 }
 
 .ms-choice {
