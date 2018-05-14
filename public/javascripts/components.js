@@ -5,11 +5,13 @@ $('#ventanas').multipleSelect({
     minimumCountSelected:2,
     countSelected:"# Ventanas Habilitadas",
     onClick: function(view) {
-                if(view.checked)
-                    ventanas[view.value].mostrar();
-                else
-                    ventanas[view.value].ocultar();
+ //               if(view.checked)
+ //                   ventanas[view.value].mostrar();
+ //               else
+  //                  ventanas[view.value].ocultar();
                 alert("Selected text: " +view.value+
+                    (view.checked ? 'checked' : 'unchecked'));
+                alert("Selected text: " +ventanas[view.value]+
                     (view.checked ? 'checked' : 'unchecked'));
             }
 });
