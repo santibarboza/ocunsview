@@ -34,7 +34,7 @@ var panelRegistros = new Vue({
 panelMemoria = new Vue({
   el: '#panelMemoria',
   data: {
-    ver: false
+    ver: true
   },
   methods: {
     ocultar:ocultarPanelSimulacion,
