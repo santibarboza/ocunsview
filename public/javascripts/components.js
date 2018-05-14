@@ -1,3 +1,12 @@
+$('#ventanas').multipleSelect({
+    placeholder:"Ventanas Habilitadas",
+    onClick: function(view) {
+                alert("Selected text: " +view.value+
+//                $eventResult.text(view.label + '(' + view.value + ') ' + 
+                    (view.checked ? 'checked' : 'unchecked'));
+            }
+});
+
 var contenedorCode = new Vue({
   el: '#contenedorCode',
   data: {
