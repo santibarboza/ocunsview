@@ -1,8 +1,10 @@
 <div class="panel panel-default" id="panelRegistros">
         <div class="panel-heading">
-            <h3 class="panel-title">Registros del Procesador</h3>
+            <h3 class="panel-title">Registros del Procesador
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" >-</button>
+            </h3>
         </div>
-        <div class="panel-body">
+        <div class="panel-body collapse in">
             <table class="table table-bordered"id="row1">
                 <thead><tr>
                     {% for i in range(0, 7) %}
