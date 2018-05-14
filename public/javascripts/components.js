@@ -1,5 +1,4 @@
 var contenedorCode,contenedorCompilado,contenedorSimulacion;
-var ventanas={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
 $('#ventanas').multipleSelect({
     placeholder:"Ventanas Habilitadas",
     minimumCountSelected:2,
@@ -64,3 +63,4 @@ var panelMemoria = new Vue({
   }
 })
 
+var ventanas={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
