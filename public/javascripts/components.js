@@ -12,7 +12,7 @@ $('#ventanas').multipleSelect({
                     (view.checked ? 'checked' : 'unchecked'));
                 alert("Selected text: " +view.label+
                     (view.checked ? 'checked' : 'unchecked'));
-                alert("Selected text: " +ventanas[view.value]+
+                alert("Selected text: " +ventanasArray[view.value]+
                     (view.checked ? 'checked' : 'unchecked'));
             }
 });
@@ -63,4 +63,4 @@ var panelMemoria = new Vue({
   }
 })
 
-var ventanas={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
+var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
