@@ -3,6 +3,7 @@ $('#ventanas').multipleSelect({
     placeholder:"Ventanas Habilitadas",
     minimumCountSelected:2,
     countSelected:"# Ventanas Habilitadas",
+    selectAll: false,
     onClick: function(view) {
                 if(view.checked)
                     ventanasArray[view.value].mostrar();
