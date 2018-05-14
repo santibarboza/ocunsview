@@ -21,27 +21,6 @@ $('#ventanas').multipleSelect({
 });
 $('#ventanas').multipleSelect('checkAll');
 
-var panelRegistros = new Vue({
-  el: '#panelRegistros',
-  data: {
-    ver: true
-  },
-  methods: {
-    ocultar:ocultarPanelSimulacion,
-    mostrar:mostrarPanelSimulacion        
-  }
-})
-panelMemoria = new Vue({
-  el: '#panelMemoria',
-  data: {
-    ver: true
-  },
-  methods: {
-    ocultar:ocultarPanelSimulacion,
-    mostrar:mostrarPanelSimulacion        
-  }
-})
-
 contenedorCode = new Vue({
   el: '#contenedorCode',
   data: {
