@@ -36,7 +36,7 @@ contenedorCompilado = new Vue({
   el: '#contenedorCompilado',
   data: {
     ver: true,
-    bigSize:'col-md-3'
+    bigSize:'col-md-3',
     message:""
   },
   methods: {
