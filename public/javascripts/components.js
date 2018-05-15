@@ -36,13 +36,11 @@ contenedorCompilado = new Vue({
   el: '#contenedorCompilado',
   data: {
     ver: true,
-    bigSize:'col-md-3',
-    message:""
+    bigSize:'col-md-3'
   },
   methods: {
     ocultar:ocultarCompilado,
-    mostrar:mostrarCompilado,
-    setCompilado:setCodigoCompilado
+    mostrar:mostrarCompilado
   }
 })
 contenedorSimulacion = new Vue({
@@ -59,3 +57,15 @@ contenedorSimulacion = new Vue({
   }
 })
 var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimulacion};
+
+
+
+var codigoCompilado = new Vue({
+  el: '#codigoCompilado',
+  data: {
+    message:""
+  },
+  methods: {
+    setCompilado:setCodigoCompilado
+  }
+})
