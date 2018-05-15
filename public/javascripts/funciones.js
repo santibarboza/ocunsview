@@ -83,5 +83,5 @@ function mostrarSimulacion(){
    }
 }
 function setCodigoCompilado(res){
-    this.message =res.data;
+   $("#codigoCompilado")[0].value=res;
 }
