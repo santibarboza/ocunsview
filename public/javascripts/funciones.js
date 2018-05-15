@@ -77,7 +77,7 @@ function mostrarSimulacion(){
                 contenedorCode.bigSize='col-md-7';
              else if(contenedorCompilado.ver){
                     this.bigSize='col-md-8';
-                    contenedorSimulacion.bigSize='col-md-4';
+                    contenedorCompilado.bigSize='col-md-4';
                 }else
                     this.bigSize='col-md-12';
    }
