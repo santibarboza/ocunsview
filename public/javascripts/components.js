@@ -63,7 +63,7 @@ var ventanasArray={"0":contenedorCode,"1":contenedorCompilado,"2":contenedorSimu
 var codigoCompilado = new Vue({
   el: '#codigoCompilado',
   data: {
-    message:""
+    message:"Aca iria el codigo compilado"
   },
   methods: {
     setCompilado:setCodigoCompilado
