@@ -37,10 +37,12 @@ contenedorCompilado = new Vue({
   data: {
     ver: true,
     bigSize:'col-md-3'
+    message:""
   },
   methods: {
     ocultar:ocultarCompilado,
-    mostrar:mostrarCompilado
+    mostrar:mostrarCompilado,
+    setCompilado:setCodigoCompilado
   }
 })
 contenedorSimulacion = new Vue({

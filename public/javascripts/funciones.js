@@ -82,3 +82,6 @@ function mostrarSimulacion(){
                     this.bigSize='col-md-12';
    }
 }
+function setCodigoCompilado(data){
+    
+}
