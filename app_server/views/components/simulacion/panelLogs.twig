@@ -1,0 +1,20 @@
+    <div class="panel panel-default" id="panelMemoria">
+        <div class="panel-heading">
+            <h3 class="panel-title col-md-11">Logs del Sistema</h3>
+            <button type="button" class="btn btn-default col-md-1 closebutton" data-toggle="collapse" data-target="#bodyLog" >-</button>
+        </div>
+        <div class="panel-body collapse" id="bodyLog">
+            <table class="table table-bordered" id="tablaMemoria">
+                <tbody>
+                  <textarea id="Logs"
+		          class="form-control source-code"
+		          style="margin-bottom:5px;"
+		          rows="5"
+		          tab-support
+		          select-line
+		          ng-model="code"
+		          readonly>//Aca se mostrarian los logs</textarea>
+                </tbody>
+            </table>
+        </div>
+    </div>
