@@ -37,8 +37,7 @@ contenedorCompilado = new Vue({
   data: {
     ver: true,
     bigSize:'col-md-3',
-
-    message:"Aca iria el codigo compilado"
+    texto:"Aca iria el codigo compilado"
   },
   methods: {
     ocultar:ocultarCompilado,
