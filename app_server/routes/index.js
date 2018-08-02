@@ -10,7 +10,7 @@ const ctrlApi = require('../controllers/apiController');
 /* GET home page. */
 router.get('/', ctrlMain.index);
 router.get('/ide', ctrlIde.getIde);
-router.get('/api/compilar', ctrlApi.compilar);
+router.post('/api/compilar', ctrlApi.compilar);
 //router.get('/api/ejecucion', ctrlApi.ejecutar);
 //router.get('/api/siguientepaso', ctrlApi.siguientepaso);
 //router.get('/api/detener', ctrlApi.detener);
