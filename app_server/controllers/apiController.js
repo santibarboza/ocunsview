@@ -8,7 +8,7 @@ const compilar = function(req, res){
   	compilo:true,
   	id:"5"
   };
- 
+
   var error={
   	compilo:false,
   	error: "El Error de Compilacion fue este"
@@ -33,8 +33,8 @@ const detener=function(req,res){
 };
 
 module.exports = {
+  compilar,
   ejecucion,
   siguientepaso,
-  detener,
-  compilar
+  detener
 };
