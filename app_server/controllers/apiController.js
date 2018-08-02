@@ -2,7 +2,10 @@
 /* Retorna los comentarios que correspondan al grupo o rama que se obtienen como parametro */
 const compilar = function(req, res){
   //var id_perteneciente=req.param("id");
-
+	res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
   var codigo=req.body.elemento.code;
   var direccion=req.body.elemento.direccion;
   var usuario={
