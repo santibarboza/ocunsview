@@ -11,7 +11,7 @@ const compilar = function(req, res){
 
   var error={
   	compilo:false,
-  	error: "El Error de Compilacion fue este"+codigo  
+  	error: "El Error de Compilacion fue este= "+req.body.code+ " body= "+req.body 
   };
   if(codigo=="Funciona")
   	res.status(200).jsonp(usuario);
