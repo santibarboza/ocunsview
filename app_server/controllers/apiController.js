@@ -2,8 +2,9 @@
 /* Retorna los comentarios que correspondan al grupo o rama que se obtienen como parametro */
 const compilar = function(req, res){
   //var id_perteneciente=req.param("id");
-  var codigo=req.body.code;
-  var direccion=req.body.direccion;
+
+  var codigo=req.body.elemento.code;
+  var direccion=req.body.elemento.direccion;
   var usuario={
   	compilo:true,
   	id:"5"
@@ -11,7 +12,7 @@ const compilar = function(req, res){
 
   var error={
   	compilo:false,
-  	error: "El Error de Compilacion fue este= "+req.body.code+ " body= "+  JSON.stringify(req.body) 
+  	error: "El Error de Compilacion fue este= "+req.body.elemento.code+ " body= "+  JSON.stringify(req.body) 
   };
   if(codigo=="Funciona")
   	res.status(200).jsonp(usuario);
